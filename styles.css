@@ -1,0 +1,126 @@
+body { display: flex; color: #fff;}
+.app-container { padding-left: 48px; padding-right: 48px; width: 100%; max-width: 1280px; margin-left: auto; margin-right: auto; }
+.app-wrapper { display: flex; flex: 1 1 auto; background: #0d0f28; flex-direction: column; min-height: 100vh;}
+.app-header { width: 100%; position: sticky;top: 0px;z-index: 999;background-image: linear-gradient(to bottom ,#0d0f28,#0d0f28,#0d0f28f5,#0d0f28ef,#0d0f28c6 ,#0d0f28ac,#0d0f2873 ,#fdfcfc00 ); border: none;color: white;font-weight: 500;}
+.navbar a{ color: #fff;}
+.app-logo { width: 2rem; height: 2rem;}
+.app-header .navbar-brand { display: flex; align-items: center; gap: 8px;}
+.app-logo-name { width: 50px; white-space: pre-wrap; line-height: 1;}
+.app-header .navbar-nav { margin-left: 5rem;}
+.app-searchbar { background: #11193d; padding:0 12px; border-radius: .50rem; display: flex; align-items: center; gap: 4px;padding-right: 200px;}
+.app-searchbar img { width: 12px; height: 12px;}
+.app-searchbar input { padding: 0; font-size: 12px; height: 1.5rem; width: 10rem; background: transparent; border: none; color: #fff;}
+.app-searchbar input:focus-visible { outline: none;}
+.app-notifications { display: flex; width: 20px; height: 20px;}
+.app-notifications img{ height: 16px; width: 16px;}
+.app-profile { height: 20px; display: flex; width: 20px;}
+.app-profile img { width: 100%; height: 100%; border-radius: 50%;}
+.app-layout { display: flex; width: 100%; padding-top: 3rem;}
+.app-right { flex:  1 1 30%; width: 30%; padding-left: 20px; display: flex;}
+.app-right__head {display: flex; align-items: flex-end; justify-content: space-between;}
+.app-right__head-queue { font-size: 20px; font-weight: 500;}
+.app-queue-dropdown .dropdown-toggle { color: #277475; font-weight: 500;}
+.app-queue-dropdown .dropdown-toggle:hover, .app-queue-dropdown .dropdown-toggle:focus { text-decoration: none;}
+.app-queue-dropdown .dropdown-menu {min-width: 5rem; right: 0 !important; left: auto !important; transform: none !important; top: auto !important;}
+.app-queue-dropdown .dropdown-item:not(:last-child) { border-bottom: 1px solid #dedede;}
+.app-right__body { display: flex; flex-direction: column; margin-top: 40px;}
+.app-right__plItem { padding-bottom: 1rem;}
+.app-right__plItem .-number { font-size: 16px; font-weight: 300;}
+.app-right__plItem .-song { gap: 12px; margin-left: 12px; color: #fff; margin-right: auto;}
+.app-right__plItem .-song:hover,.app-right__plItem .-song:focus { text-decoration: none;}
+.app-right__plItem .-song img { width: 50px; height: 50px;}
+.app-right__plItem .-nameWrap .-name { font-size: 18px;}
+.app-right__plItem .-nameWrap .-artist { font-size: 14px; font-weight: 300;}
+.app-right__plItem .-favourite img{ height: 18px; width: 18px;}
+.app-left { flex: 1 1 calc(100% - 30%); width: calc(100% - 30%); display: flex; flex-direction: column; padding-bottom: 2rem;}
+.app-playlist { width: 100%; margin-top: 1.5rem; display: flex;}
+.app-playlist img { width: 100%; height: 250px;}
+.app-latestRelease, .app-popularArtists { margin-top: 50px;}
+.app-latestRelease .-title, .app-popularArtists .-title { font-size: 20px; font-weight: 600; margin-bottom: 1rem;}
+.app-latestRelease-songs .-song { margin-left: 0; }
+.app-latestRelease-songs .-song img { width: 75px; height: 75px;}
+.app-latestRelease-songs .-options { color: #fff;}
+.app-popularArtist { display: flex; flex-direction: column; align-items: center; margin-bottom: 1rem;}
+.app-popularArtist img { width: 100px; height: 100px; border-radius: 50%;}
+.app-popularArtist .-name { color: #fff; font-weight: 500;}
+.app-popularArtist:hover, .app-popularArtist:focus { color: #fff; text-decoration: none;}
+.app-stations { background: #0f1842; padding: 16px; display: flex; align-items: center; gap: 32px;}
+.app-stations-all { margin: 0 8px; height: 60px; background: #ff5d0a; display: inline-flex; padding: 12px; align-items: center; justify-content: center;box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); position: relative;}
+.app-stations-all::before, .app-stations-all::after {position: absolute; content: ""; width: 8px; height: 48px; background-color: #fbd04a; left: -8px;}
+.app-stations-all::after { left: auto; right: -8px;}
+.app-stations-categorysList { display: flex; align-items: center; gap: 1rem;}
+.app-stations-category { width: 65px; height: 65px; border-radius: 50%; overflow: hidden; position: relative;}
+.app-stations-category img { object-fit: cover; object-position: center; height: 100%; width: 100%;}
+.app-stations-category .-name { position: absolute; top: 0; text-align: center; align-items: center; display: flex; width: 100%; justify-content: center; color: #fff; font-weight: 500; height: 100%; background: rgba(0, 0, 0, 0.5);}
+.app-themesWrap { margin-top: 2rem;}
+.app-themesWrap .app-theme { height: 150px; display: flex; width: 100%; position: relative;}
+.app-themesWrap .app-theme img { height: 100%; width: 100%; object-fit: cover; object-position: center;}
+.app-themesWrap .app-theme .-name { position: absolute; display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; color: #fff; font-size: 16px; font-weight: 500; background: rgba(0, 0, 0, 0.5);}
+.app-languageWrap { display: flex; flex-direction: column; margin-top: 32px;}
+.app-languageWrap .-title { font-size: 20px; font-weight: 600; margin-bottom: 1rem;}
+.app-language-playlistCard { display: flex; flex-direction: column; width: 100%; color: #fff;}
+.app-language-playlistCard:hover, .app-language-playlistCard:focus { color: #fff; text-decoration: none;}
+.app-language-playlistCard img { height: 100px; width: 100%;}
+.app-language-playlistCard .-desc { font-size: 12px; font-weight: 300;}
+/* --------------2nd page */
+.app-right__title { font-size: 30px; font-weight: 500;}
+.app-right__view { color: #ffffff;}
+.app-right__view:hover,.app-right__view:focus { text-decoration: none; color: white; }
+.app-right__similarPLlist { display: flex;padding-bottom: 20px; }
+.app-right__similarPLlist .-song:hover,.app-right__similarPLlist .-song:focus { text-decoration: none;}
+.app-right__similarPLlist .-song {margin-right: auto; color: white;}
+.app-right__similarPLlist .-song img {width:100px; height: 100px;box-shadow: 2px 5px 10px #2e3489;}
+.app-right__similarPLlist .-nameWrap { margin-left: 30px;}
+.app-right__similarPLlist .-name { font-weight: 500; font-size: 20px;}
+.app-right__similarPLlist .-artist {margin-top: 10px; font-size: 15px; font-weight: 400;opacity: 0.8; }
+.app-right__similarPLlist .-songoptions .-options:hover, .app-right__similarPLlist .-songoptions .-options:focus {text-decoration: none;}
+.app-right__similarPLlist .-songoptions .-options img {width: 25px; height: 20px; }
+.app-right__secondhead { display: flex; align-items: flex-end; justify-content: space-between;margin-top: 50px;}
+.app-left {position: relative; padding-right: 20px;}
+.app-left .app-left-banner {background-color:#141b41 ;margin-bottom: 20px;}
+.app-left .app-left-banner-img { overflow: hidden;}
+.app-left .app-left-banner-desc { margin-left: 50px;margin-top: 100px; margin-right: auto;padding-right: 30px;}
+.app-left-banner-desc .-title{  align-items: center;}
+.app-left-banner-desc .-title .-name {font-size: 30px; font-weight: 700; margin-right: auto;}
+.app-left-banner-desc .-title .-followers{ opacity: 0.8;}
+.app-left-banner-desc .-caption {opacity: 0.8; padding-bottom: 10px;}
+.app-left-banner-desc .-info{ opacity:0.8;padding-bottom: 50px; }
+.app-left-banner-desc .-playall {display: flex; flex-flow: row; align-items: center;padding-bottom: 20px;}
+.app-left-banner-desc .-playall input{ padding: 10px 50px; margin-right: 100px; background-image: linear-gradient(to right, #3a25b1 , #bf48de); border: none;color: white;font-weight: 500;} 
+.app-left-banner-desc .-playall a:hover, .app-left-banner-desc .-playall a:focus {text-decoration:none;}
+.app-left-banner-desc .-playall a {color: white;}
+.app-left-playlist {background-color: #7a7a7f6b; padding: 10px 0 10px 0; border-radius: 0.5rem; margin-bottom: 10px;}
+.app-left-playlist .-number { font-size: 16px; font-weight: 300;}
+.app-left-playlist .-song { gap: 12px; margin-left: 12px; color: #fff; margin-right: auto;}
+.app-left-playlist .-song:hover,.app-left-playlist .-song:focus { text-decoration: none;}
+.app-left-playlist .-song img { width: 50px; height: 50px; border-radius: 0.5rem;}
+.app-left-playlist .-nameWrap .-name { font-size: 18px;}
+.app-left-playlist .-nameWrap .-artist { font-size: 14px; font-weight: 300;}
+.app-left-playlist .-favourite img{ height: 18px; width: 18px; margin-right: 20px;}
+.app-left-playlist .-add i { font-size: 30px; margin-right: 50px; color: white;}
+/* footer */
+.app-footer { background-color: #282828; padding: 5px 0 5px 0 ;position: sticky;bottom: 0px;z-index: 999; align-items: center;}
+.app-footer .-footer {justify-content: space-between;align-items: center;}
+.app-footer .-footer .-currentsong {align-items: center;}
+.app-footer .-footer .-currentsong .-songbanner img {width: 60px; height: 60px;}
+.app-footer .-footer .-currentsong .-details {padding-left: 10px;width: 150px; display: flex; flex-flow: column; }
+.app-footer .-footer .-currentsong .-details .-name {font-size: 17px; font-weight: 500; overflow: hidden; white-space: nowrap; }
+.app-footer .-footer .-currentsong .-details .-artist { opacity: 0.8; font-size: 15px;}
+.app-footer .-footer .-currentsong .-favourite img {width: 20px;height: 20px; }
+.app-footer .-footer .-currentsong .-favourite {padding:0 5px 0 10px;}
+.app-footer .-footer .-currentsong .-ban { color: white; font-size: 20px}
+.app-footer .-footer .-playoptions .-options { margin: 0 100px 0 100px;justify-content:space-between; align-items: center;}
+.app-footer .-footer .-playoptions .-options div a i {color: white; font-size: 20px; }
+.app-footer .-footer .-playoptions .-options div a .-playbutton {color: white; font-size: 40px;}
+.app-footer .-footer .-playoptions .-timelinetrack input {width:400px; height: 5px; margin: 0 10px 0 10px; border-radius: 1rem;}
+.app-footer .-footer .-playoptions .-timelinetrack .seek{accent-color: #43f767;}
+.app-footer .-footer .-playoptions .-timelinetrack {align-items: center;}
+.app-footer .-footer .-others {align-items: center; justify-content: space-between;}
+.app-footer .-footer .-others div a i {color: white; font-size: 20px;}
+.app-footer .-footer .-others div a {padding: 0 7px 0 7px;}
+.app-footer .-footer .-others .-timelinetrack .seek{accent-color: #43f767;height: 5px;}
+.app-footer .-footer .-others .-timelinetrack {align-items: center; padding-bottom: 5px;}
+
+@media (max-width: 768px) {
+    .app-container { padding-left: 1rem; padding-right: 1rem;}
+}

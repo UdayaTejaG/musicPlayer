@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Artist</title>
+</head>
+
+<body>
+    <div id="main" class="app-wrapper">
+        <header class="app-header">
+            <nav class="navbar navbar-expand-lg app-container">
+                <a class="navbar-brand" href="javascript:;">
+                    <img class="app-logo" src="assets/images/logo.png" alt="logo" role="presentation">
+                    <div class="app-logo-name">Ninja Studio</div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="javascript:;">Favourites <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <div class="app-searchbar">
+                            <img src="assets/images/search.svg" alt="search">
+                            <input class="" type="text" placeholder="Search">
+                        </div>
+                        <a href="javascript:;" class="app-notifications ml-3">
+                            <img src="assets/images/bell.svg" alt="notifications">
+                        </a>
+                        <a href="javascript:;" class="app-profile ml-3">
+                            <img src="assets/images/playlist.png" alt="notifications">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="app-wrap d-flex flex-fill app-container">
+            <div class="app-layout">
+                <div class="app-left d-flex flex-column">
+                    <div class="app-left-banner d-flex flex-row">
+                        <div class="app-left-banner-img">
+                            <a href="javascript:;">
+                                <img src="assets/images/coldplay_banner.png">
+                            </a>
+                        </div>
+                        <div class="app-left-banner-desc d-flex flex-column w-100">
+                            <div class="-title d-flex flex-row w-100">
+                                <div class="-name">Cold Play</div>
+                                <div class="-followers">851 Followers</div>
+                            </div>
+                            <div class="-caption">British Band</div>
+                            <div class="-info">Coldplay is a British music band that has enjoyed continuous success since their
+                                inception in 1996 through their intelligent and soulful songs. The band members are
+                                Chris Martin (lead vocals), Jonny Buckland (lead guitar), Guy Berryman (bass guitar)
+                                and Will Champion (drums).
+                            </div>
+                            <div class="-playall w-100">
+                                <input type="button" value="Play All">
+                                <a href="javascript:;">Follow</a>
+                            </div>
+                            <div>
+                                <p>247 Tracks | 128 Albums</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-left-albums d-flex flex-column">
+                        <!-- <i class="fa fa-plus"></i> -->
+                        <div class="app-left-playlist d-flex align-items-center">
+                            <a href="javascript:;" class="-song d-flex align-items-center">
+                              <div class="-number">01</div>
+                              <img src="assets/images/playlist.png" alt="song">
+                              <div class="-nameWrap d-flex flex-column">
+                                <div class="-name">Mirage</div>
+                                <div class="-artist">Else</div>
+                              </div>
+                            </a>
+                            <a href="javascript:;" class="-favourite">
+                              <img src="assets/images/favourite.svg" alt="favourite">
+                            </a>
+                            <a href="javascript:;" class="-add">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <div class="app-left-playlist d-flex align-items-center">
+                            <a href="javascript:;" class="-song d-flex align-items-center">
+                              <div class="-number">01</div>
+                              <img src="assets/images/playlist.png" alt="song">
+                              <div class="-nameWrap d-flex flex-column">
+                                <div class="-name">Mirage</div>
+                                <div class="-artist">Else</div>
+                              </div>
+                            </a>
+                            <a href="javascript:;" class="-favourite">
+                              <img src="assets/images/favourite.svg" alt="favourite">
+                            </a>
+                            <a href="javascript:;" class="-add">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <div class="app-left-playlist d-flex align-items-center">
+                            <a href="javascript:;" class="-song d-flex align-items-center">
+                              <div class="-number">01</div>
+                              <img src="assets/images/playlist.png" alt="song">
+                              <div class="-nameWrap d-flex flex-column">
+                                <div class="-name">Mirage</div>
+                                <div class="-artist">Else</div>
+                              </div>
+                            </a>
+                            <a href="javascript:;" class="-favourite">
+                              <img src="assets/images/favourite.svg" alt="favourite">
+                            </a>
+                            <a href="javascript:;" class="-add">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <div class="app-left-playlist d-flex align-items-center">
+                            <a href="javascript:;" class="-song d-flex align-items-center">
+                              <div class="-number">01</div>
+                              <img src="assets/images/playlist.png" alt="song">
+                              <div class="-nameWrap d-flex flex-column">
+                                <div class="-name">Mirage</div>
+                                <div class="-artist">Else</div>
+                              </div>
+                            </a>
+                            <a href="javascript:;" class="-favourite">
+                              <img src="assets/images/favourite.svg" alt="favourite">
+                            </a>
+                            <a href="javascript:;" class="-add">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <div class="app-left-playlist d-flex align-items-center">
+                            <a href="javascript:;" class="-song d-flex align-items-center">
+                              <div class="-number">01</div>
+                              <img src="assets/images/playlist.png" alt="song">
+                              <div class="-nameWrap d-flex flex-column">
+                                <div class="-name">Mirage</div>
+                                <div class="-artist">Else</div>
+                              </div>
+                            </a>
+                            <a href="javascript:;" class="-favourite">
+                              <img src="assets/images/favourite.svg" alt="favourite">
+                            </a>
+                            <a href="javascript:;" class="-add">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <div class="app-left-playlist d-flex align-items-center">
+                            <a href="javascript:;" class="-song d-flex align-items-center">
+                              <div class="-number">01</div>
+                              <img src="assets/images/playlist.png" alt="song">
+                              <div class="-nameWrap d-flex flex-column">
+                                <div class="-name">Mirage</div>
+                                <div class="-artist">Else</div>
+                              </div>
+                            </a>
+                            <a href="javascript:;" class="-favourite">
+                              <img src="assets/images/favourite.svg" alt="favourite">
+                            </a>
+                            <a href="javascript:;" class="-add">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <div class="app-left-playlist d-flex align-items-center">
+                            <a href="javascript:;" class="-song d-flex align-items-center">
+                              <div class="-number">01</div>
+                              <img src="assets/images/playlist.png" alt="song">
+                              <div class="-nameWrap d-flex flex-column">
+                                <div class="-name">Mirage</div>
+                                <div class="-artist">Else</div>
+                              </div>
+                            </a>
+                            <a href="javascript:;" class="-favourite">
+                              <img src="assets/images/favourite.svg" alt="favourite">
+                            </a>
+                            <a href="javascript:;" class="-add">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                    </div>
+                </div>
+                <div class="app-right d-flex flex-column">
+                    <div class="app-right-similar d-flex flex-column w-100">
+                        <div class="app-right__head">
+                            <div class="app-right__title">Similar Artists</div>
+                            <div class="dropdown app-queue-dropdown">
+                                <a class="app-right__view" href="javascript:;" role="button" aria-expanded="false">
+                                    View All
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-right__body">
+                            <div class="app-right__similarPLlist d-flex align-items-start">
+                                <a href="javascript:;" class="-song d-flex align-items-center">
+                                    <img src="assets/images/playlist.png" alt="song">
+                                    <div class="-nameWrap d-flex flex-column">
+                                        <div class="-name">Imagine Dragons</div>
+                                        <div class="-artist">Pop Band</div>
+                                    </div>
+                                </a>
+                                <div class="-songoptions d-flex flex-column">
+                                    <a href="javascript:;" class="-options" role="button" title="option">
+                                        <img src="assets/images/three-dots-svgrepo-com.svg" alt="">
+                                    </a>
+                                    <div class="-trackTime">4.44</div>
+                                </div>
+                            </div>
+                            <div class="app-right__similarPLlist d-flex align-items-start">
+                                <a href="javascript:;" class="-song d-flex align-items-center">
+                                    <img src="assets/images/playlist.png" alt="song">
+                                    <div class="-nameWrap d-flex flex-column">
+                                        <div class="-name">Imagine Dragons</div>
+                                        <div class="-artist">Pop Band</div>
+                                    </div>
+                                </a>
+                                <div class="-songoptions d-flex flex-column">
+                                    <a href="javascript:;" class="-options" role="button" title="option">
+                                        <img src="assets/images/three-dots-svgrepo-com.svg" alt="">
+                                    </a>
+                                    <div class="-trackTime">4.44</div>
+                                </div>
+                            </div>
+                            <div class="app-right__similarPLlist d-flex align-items-start">
+                                <a href="javascript:;" class="-song d-flex align-items-center">
+                                    <img src="assets/images/playlist.png" alt="song">
+                                    <div class="-nameWrap d-flex flex-column">
+                                        <div class="-name">Imagine Dragons</div>
+                                        <div class="-artist">Pop Band</div>
+                                    </div>
+                                </a>
+                                <div class="-songoptions d-flex flex-column">
+                                    <a href="javascript:;" class="-options" role="button" title="option">
+                                        <img src="assets/images/three-dots-svgrepo-com.svg" alt="">
+                                    </a>
+                                    <div class="-trackTime">4.44</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-right-recent d-flex flex-column w-100">
+                        <div class="app-right__secondhead">
+                            <div class="app-right__title">Recently Played</div>
+                            <div class="dropdown app-queue-dropdown">
+                                <a class="app-right__view" href="javascript:;" role="button" aria-expanded="false">
+                                    View All
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-right__body">
+                            <div class="app-right__plItem d-flex align-items-center">
+                              <a href="javascript:;" class="-song d-flex align-items-center">
+                                <div class="-number">01</div>
+                                <img src="assets/images/playlist.png" alt="song">
+                                <div class="-nameWrap d-flex flex-column">
+                                  <div class="-name">Mirage</div>
+                                  <div class="-artist">Else</div>
+                                </div>
+                              </a>
+                              <a href="javascript:;" class="-favourite">
+                                <img src="assets/images/favourite.svg" alt="favourite">
+                              </a>
+                            </div>
+                            <div class="app-right__plItem d-flex align-items-center">
+                              <a href="javascript:;" class="-song d-flex align-items-center">
+                                <div class="-number">02</div>
+                                <img src="assets/images/playlist.png" alt="song">
+                                <div class="-nameWrap d-flex flex-column">
+                                  <div class="-name">Mirage</div>
+                                  <div class="-artist">Else</div>
+                                </div>
+                              </a>
+                              <a href="javascript:;" class="-favourite">
+                                <img src="assets/images/favourite.svg" alt="favourite">
+                              </a>
+                            </div>
+                            <div class="app-right__plItem d-flex align-items-center">
+                              <a href="javascript:;" class="-song d-flex align-items-center">
+                                <div class="-number">03</div>
+                                <img src="assets/images/playlist.png" alt="song">
+                                <div class="-nameWrap d-flex flex-column">
+                                  <div class="-name">Mirage</div>
+                                  <div class="-artist">Else</div>
+                                </div>
+                              </a>
+                              <a href="javascript:;" class="-favourite">
+                                <img src="assets/images/favourite.svg" alt="favourite">
+                              </a>
+                            </div>
+                            <div class="app-right__plItem d-flex align-items-center">
+                              <a href="javascript:;" class="-song d-flex align-items-center">
+                                <div class="-number">04</div>
+                                <img src="assets/images/playlist.png" alt="song">
+                                <div class="-nameWrap d-flex flex-column">
+                                  <div class="-name">Mirage</div>
+                                  <div class="-artist">Else</div>
+                                </div>
+                              </a>
+                              <a href="javascript:;" class="-favourite">
+                                <img src="assets/images/favourite.svg" alt="favourite">
+                              </a>
+                            </div>
+                            <div class="app-right__plItem d-flex align-items-center">
+                              <a href="javascript:;" class="-song d-flex align-items-center">
+                                <div class="-number">05</div>
+                                <img src="assets/images/playlist.png" alt="song">
+                                <div class="-nameWrap d-flex flex-column">
+                                  <div class="-name">Mirage</div>
+                                  <div class="-artist">Else</div>
+                                </div>
+                              </a>
+                              <a href="javascript:;" class="-favourite">
+                                <img src="assets/images/favourite.svg" alt="favourite">
+                              </a>
+                            </div>
+                            <div class="app-right__plItem d-flex align-items-center">
+                              <a href="javascript:;" class="-song d-flex align-items-center">
+                                <div class="-number">06</div>
+                                <img src="assets/images/playlist.png" alt="song">
+                                <div class="-nameWrap d-flex flex-column">
+                                  <div class="-name">Mirage</div>
+                                  <div class="-artist">Else</div>
+                                </div>
+                              </a>
+                              <a href="javascript:;" class="-favourite">
+                                <img src="assets/images/favourite.svg" alt="favourite">
+                              </a>
+                            </div>
+                            <div class="app-right__plItem d-flex align-items-center">
+                              <a href="javascript:;" class="-song d-flex align-items-center">
+                                <div class="-number">07</div>
+                                <img src="assets/images/playlist.png" alt="song">
+                                <div class="-nameWrap d-flex flex-column">
+                                  <div class="-name">Mirage</div>
+                                  <div class="-artist">Else</div>
+                                </div>
+                              </a>
+                              <a href="javascript:;" class="-favourite">
+                                <img src="assets/images/favourite.svg" alt="favourite">
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="app-footer">
+          <div class="-footer d-flex flex-row app-container">
+            <div class="-currentsong d-flex ">
+              <div class="-songbanner">
+                <img src="assets/images/songImg.jpg" alt="">
+              </div>
+              <div class="-details">
+                <div class="-name">Imagine by John Lennon</div>
+                <div class="-artist">John Lennon</div>
+              </div>
+                <a href="javascript:;" class="-favourite">
+                <img src="assets/images/favourite.svg" alt="favourite">
+              </a>
+              <a href="javascript:;" class="-ban">
+                <i class="fa fa-ban"></i>
+            </a>
+          </div>
+          <div class="-playoptions d-flex flex-column h-100">
+            <div class="-options d-flex flex-row">
+            <div><a href="javascript:;" >
+                <i class="fa fa-random"></i>
+              </a></div>
+            <div><a href="javascript:;">
+                <i class="fa fa-step-backward"></i>
+              </a></div>
+            <div><a href="javascript:;">
+                <i class="fa fa-pause-circle-o -playbutton"></i>
+              </a></div>
+            <div><a href="javascript:;">
+                <i class="fa fa-step-forward"></i>
+              </a></div>
+            <div><a href="javascript:;">
+                <i class="fa fa-repeat"></i>
+              </a></div>
+            </div>
+            <div class="-timelinetrack d-flex flex-row" role="presentation">
+              <div>1:39</div>
+              <input class="seek" id="seek" min="0" data-seek="" type="range" step="0.01">
+              <div>4:44</div>
+            </div>
+          </div>
+          <div class="-others d-flex flex-row" >
+            
+            <div><a href="javascript:;" >
+              <i class="fa fa-navicon"></i>
+            </a></div>
+          <div><a href="javascript:;">
+            <i class="fa fa-desktop"></i>
+            </a></div>
+          <div><a href="javascript:;">
+              <i class="fa fa-volume-up"></i>
+            </a></div>
+            <div class="-timelinetrack " role="presentation">
+              <input class="seek" id="seek" min="0" data-seek="" type="range" step="0.01">
+            </div>
+          <div><a href="javascript:;">
+            <i class="fa fa-expand"></i>
+            </a></div>
+          </div>
+        </footer>
+    </div>
+</body>
+
+</html>
